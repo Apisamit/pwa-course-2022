@@ -1,0 +1,23 @@
+.App {
+  background-color: #ddffdd;
+  width: 400px;
+  height: 100%;;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.userlist {
+  background-color: #3a1f00;;
+  flex: 1;
+}
+
+.chat {
+  background-color: #d4d4d4;;
+  flex: 12;
+}
+
+.inputbox {
+  background-color: #494949;;
+  flex: 1;
+}
