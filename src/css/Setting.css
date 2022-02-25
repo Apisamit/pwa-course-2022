@@ -1,0 +1,19 @@
+body {
+    background-color: pink;
+}
+
+.size, .sound, .chat {
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border-radius: 20%;
+    text-align: center;
+    transition: width 1s, height 1s, background-color 1s;
+}
+
+.size:hover, .sound:hover, .chat:hover{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
