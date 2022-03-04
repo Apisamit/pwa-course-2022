@@ -11,7 +11,7 @@ function Tabbar () {
         Chat
       </Link>
       <Link to="/profile" className="tabbutton">
-        Profile
+      Profile
       </Link>
     </div>
   )
