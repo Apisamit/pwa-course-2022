@@ -9,6 +9,7 @@
 
 .userlist.closed {
   width: 10px;
+  background-color: #33ff00;
 }
 
 .userlist.open {
