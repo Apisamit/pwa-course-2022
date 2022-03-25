@@ -26,9 +26,17 @@ function Chatline (props) {
         .then(data => setElement(data.gender));
     } 
     else if (text.startsWith("/randomfact")) {
-      // ex10-01 here: Implement randomfact using fetch & promise
-      // https://uselessfacts.jsph.pl/random.json?language=en
+      const [, name] = text.split(" ");
+      fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+        .then(res => res.json())
+        .then(data => setElement(data.text));
       
+    }
+    else if (text.startsWith("/borede")) {
+      const [, name] = text.split(" ");
+      fetch("https://www.boredapi.com/api/activity")
+        .then(res => res.json())
+        .then(data => setElement(data.activity + " => " + data.type));
     }
   };
 
